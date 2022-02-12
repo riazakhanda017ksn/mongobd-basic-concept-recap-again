@@ -20,7 +20,8 @@ const student = new mongoose.Schema({
 const Student = new mongoose.model("Student", student); ///model is like = collections
 
 const adder = async () => {
-  //   const get = await Student.find({ name: { $eq: "riaz" } });   eq= equal
+  const get = await Student.find({ name: { $eq: "riaz" } });
+  // eq = equal;
   //   const get = await Student.find({ name: { $gt: "riaz" } }); gt = greater
   //   const get = await Student.find({ name: { $gte: "riaz" } }); gte = greater then or equal
   //   const get = await Student.find({ name: { $in: ["riaz", "Riaz"] } }); in = [in array has thats all  value]
